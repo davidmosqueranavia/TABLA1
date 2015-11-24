@@ -1,0 +1,244 @@
+//float bola = 0;
+//float bote = 4;
+Table tabla;
+
+float lu = 190; 
+float chin = 3;
+int gif = 1;
+PFont calibri40;
+PFont calibri15;
+PFont italica;
+
+void setup() {
+  size(570, 720);
+  tabla = loadTable("distance.csv", "header");
+  calibri40 = loadFont("Calibri-BoldItalic-30.vlw");
+  calibri15 = loadFont("Calibri-15.vlw");
+  italica = loadFont("Calibri-Italic-15.vlw");
+}
+
+void draw() {
+
+  background(80);
+  textFont(calibri15);
+  fill(255);
+  text("Km", 525, 630);
+  textFont(calibri15);
+  fill(229, 0, 255);
+  text("Distancia recorrida", 160, 630);
+  textFont(calibri15);
+  fill(255);
+  text("Ciudad", 20, 630);
+  textFont(calibri15);
+  fill(random(250), random(250), random(250));
+  text("Distancia", 439, 626);
+  fill(random(250), random(250), random(250));
+  text("ahorrada", 439, 637);
+  textFont(calibri40); 
+  fill(255);
+  text("KILÓMETROS HASTA BOGOTÁ D.C.", 70, 690);
+
+
+  //
+
+
+  for (int d = 25; d < 620; d = d + 30) {
+    line(160, d, 490, d);
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    fill(random(250), random(250), random(250));
+    ellipse(lu, 26, 5, 5);
+
+
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 56, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 86, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 116, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 146, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 176, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 206, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 236, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 266, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+
+    ellipse(lu, 296, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 326, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 356, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 386, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 416, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 446, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 476, 5, 5);
+    fill(random(250), random(250), random(250));
+    //
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 506, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 536, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 566, 5, 5);
+    fill(random(250), random(250), random(250));
+
+    //
+
+    lu = lu + (chin*gif);
+    if (lu > 480 || lu < 180) {
+      gif = gif * -1;
+    }
+    ellipse(lu, 596, 5, 5);
+    fill(random(250), random(250), random(250));
+
+
+
+    //bola = bola + bote;
+    //if( bola > 160 || bola < 495){
+    //  bola = bola * -1;
+    //}
+
+
+    
+
+      for (int ciudades = 0; ciudades < 20; ciudades = ciudades + 1 ) {
+
+        smooth();
+        textFont(italica);
+        fill(255, 255, 255, 20);
+        text(tabla.getString(ciudades, 1), 22, ciudades * 30 + 30);
+
+        textFont(italica);
+        fill(255, 255, 255, 150);
+        text(tabla.getString(ciudades, 0), 520, ciudades*30+30);
+
+        fill(120, 0, 120);
+        rect(160, ciudades * 30+20, tabla.getInt(ciudades, 0)/5, 10);
+        
+        for (int a = 26; a < 620; a = a + 30) {
+      ellipse(495, a, 5, 5);
+      }
+    }
+  }
+}
